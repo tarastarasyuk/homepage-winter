@@ -11,9 +11,14 @@
   	<meta property="og:image:width" content="2880">
     <title>Résumé</title>
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <link rel="stylesheet" href="assets/css/feature.css">
   </head>
   <body>
+    <!-- biden-feature -->
+    <img src="./assets/images/biden.png" alt="" class="biden" id="biden">
     <main>
+      <!-- adding waves - svg  -->
+      <div id="wave"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="navy" fill-opacity="1" d="M0,288L720,32L1440,224L1440,0L720,0L0,0Z"></path></svg></div>
       <article>
         <div class="page" style="border-color: navy;">
           <div class="stackable grid">
@@ -395,5 +400,14 @@
         </div>
       </article>
     </main>
+    <script type="text/javascript">
+      let avatar = document.getElementById('avatar')
+      avatar.onmouseover = function () {
+        document.getElementById('biden').classList.add("biden-block")
+      }
+      avatar.onmouseleave = function () {
+        document.getElementById('biden').classList.remove("biden-block")
+      }
+      </script>
   </body>
 </html>
