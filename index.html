@@ -1,10 +1,413 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My very own personal website.">
+    <meta property="og:description" content="&mdash; ― I'm the most successful person ever to run for the presidency, by far. Nobody's ever been more successful than me. I'm the most successful person ever to run. Ross Perot isn't successful like me. Romney ― I have a Gucci store that's worth more than Romney. Sorry losers and haters, but my IQ is one of the highest ― and you all know it! Please don't feel so stupid or insecure, it's not your fault.">
+    <meta property="og:image:alt" content="Screenshot of the homepage">
+  	<meta property="og:image:height" content="1800">
+  	<meta property="og:image:type" content="image/png">
+  	<meta property="og:image:width" content="2880">
     <title>Résumé</title>
+    <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <link rel="stylesheet" href="assets/css/feature.css">
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <!-- biden-feature -->
+    <img src="./assets/images/biden.png" alt="" class="biden" id="biden">
+    <main>
+      <!-- adding waves - svg  -->
+      <div id="wave"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="navy" fill-opacity="1" d="M0,288L720,32L1440,224L1440,0L720,0L0,0Z"></path></svg></div>
+      <article>
+        <div class="page" style="border-color: navy;">
+          <div class="stackable grid">
+            <div class="row">
+              <div class="three wide center aligned column">
+                <div class="avatar-wrapper youngtrump">
+                  <object id="avatar" class="avatar" data="./assets/images/avatar.svg" role="img" aria-label="My profile picture"></object>
+                </div>
+              </div>
+              <div class="thirteen wide column">
+                <div class="stackable grid">
+                  <div class="sixteen wide column">
+                    <h1 class="name">Donald Trump</h1>
+                    <div class="job">President of United States of America</div>
+                    <ul class="contacts">
+                        <!-- facebook -->
+                        <li>
+                          <a href="https://www.fb.com/DonaldTrump" rel="author" target="_blank" class="facebook">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                              <path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"></path>
+                            </svg>
+                            <span>DonaldTrump</span>
+                          </a>
+                        </li>
+                        <!-- mail -->
+                        <li>
+                          <a href="realDonaldTrump@whitehouse.gov" rel="author" target="_blank" class="mail">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                              <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+                            </svg>
+                            <span>realDonaldTrump@whitehouse.gov</span>
+                          </a>
+                        </li>
+                        <!-- twitter -->
+                        <li>
+                          <a href="https://twitter.com/realDonaldTrump" rel="author" target="_blank" class="twitter">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                              <path class="foreground"  d="m 16.00026,3.0388625 c -0.58865,0.2610694 -1.22138,0.4374284 -1.88531,0.51677 0.67769,-0.4061557 1.19826,-1.0492863 1.4433,-1.8156882 -0.63433,0.3761626 -1.33682,0.6492191 -2.08459,0.796395 C 12.87493,1.8984774 12.0218,1.5 11.07762,1.5 9.2648,1.5 7.79493,2.9693587 7.79493,4.7817676 c 0,0.2572203 0.029,0.5077321 0.085,0.7479163 C 5.15173,5.3928357 2.73298,4.0862392 1.11391,2.1006705 0.83135,2.5853679 0.66942,3.1490869 0.66942,3.7505572 c 0,1.1386255 0.57953,2.1431321 1.46035,2.7316454 C 1.59168,6.4652065 1.08551,6.3175109 0.64294,6.071728 c -3.7e-4,0.013697 -3.7e-4,0.027394 -3.7e-4,0.04129 0,1.5900606 1.13154,2.9164125 2.63324,3.2181024 C 3.00037,9.4061034 2.71036,9.446214 2.411,9.446214 c -0.21153,0 -0.41713,-0.020595 -0.61761,-0.058886 0.41776,1.303797 1.63002,2.252636 3.06653,2.27903 -1.12346,0.880286 -2.53884,1.404974 -4.07687,1.404974 -0.26496,0 -0.52625,-0.0156 -0.78305,-0.04589 C 1.45274,13.956676 3.17821,14.5 5.032,14.5 c 6.03793,0 9.33982,-5.0007583 9.33982,-9.3377308 0,-0.1422969 -0.003,-0.283784 -0.01,-0.4246313 0.64129,-0.4626226 1.19778,-1.0405783 1.63787,-1.6987554 z"/>
+                            </svg>
+                            <span>realDonaldTrump</span>
+                          </a>
+                        </li>
+                        <!-- instagram -->
+                        <li>
+                          <a href="https://www.instagram.com/realDonaldTrump/" rel="author" target="_blank" class="instagram">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="2 2 20 20" style="fill:#000000;">
+                              <path d="M 3 3 L 3 21 L 21 21 L 21 3 L 3 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
+                            </svg>
+                            <span>realDonaldTrump</span>
+                          </a>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="sixteen wide mobile only column">
+                    <div class="divider"></div>
+                  </div>
+                  <div class="sixteen wide column">
+                    <h2>Résumé</h2>
+                    <p>― I'm the most successful person ever to run for the presidency, by far. Nobody's ever been more successful than me. I'm the most successful person ever to run. Ross Perot isn't successful like me. Romney ― I have a Gucci store that's worth more than Romney. Sorry losers and haters, but my IQ is one of the highest ― and you all know it! Please don't feel so stupid or insecure, it's not your fault.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="sixteen wide column">
+                <div class="fat divider"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="ten wide column">
+                <h3>Experience</h3>
+                  <!-- Recent -->
+                  <ul>
+  								  <li class="details">
+                      <input type="checkbox" id="project-4-dependencies" checked>
+  										<label for="project-4-dependencies" class="summary"><strong>Recent</strong></label>
+  										<div>
+                        <small><strong>2017</strong></small>
+                        <p>Became 45th president of the United States</p>
+                        <small><strong>2016</strong></small>
+                        <p>Won election race with 77 votes more than <a href="https://en.wikipedia.org/wiki/Bill_Clinton">Clinton</a>, yippe-kee-yay!</p>
+                        <small><strong>2015</strong></small>
+                        <p>Became the most important Republican nominating for presidential election run</p>
+                        <small><strong>2009</strong></small>
+                        <p>Changed my mind and became Republican again</p>
+                        <small><strong>2005</strong></small>
+                        <p>Started Trump University with Michael Sexton and Jonathan Spitalny: no grades, certificates and other bureaucracy, but program offered courses in real estate, asset management entrepreneurship, and wealth creation. 98% students gave positive reviews while studying, however some of these ungrateful gringos filed lawsuits against Trump University after the course. I had to pay $25 million to settle that...</p>
+                        <small><strong>2002</strong></small>
+                        <p>Acquired the former Hotel Delmonico, which was renovated and reopened in 2004 as the Trump Park Avenue. I sure do like my surname!</p>
+                        <small><strong>2001</strong></small>
+                        <p>Completed <a href="https://en.wikipedia.org/wiki/Trump_World_Tower" target="_blank">Trump World Tower</a> and joined the Democratic Party</p>
+  										</div>
+  								  </li>
+  							  </ul>
+                  <!-- Back then -->
+                  <ul>
+  								  <li class="details">
+                      <input type="checkbox" id="project-4-dependencies">
+  										<label for="project-4-dependencies" class="summary"><strong>Back then</strong></label>
+  										<div>
+                        <small><strong>1999</strong></small>
+                        <p>Started buying golf courses. They are very cheap, I have 18 of them now in USA and abroad! Also switched to the Reform Party that year</p>
+                        <small><strong>1997</strong></small>
+                        <p>Began a multi-building development along the Hudson River, which was named Trump Place. Me and the other investors sold our shares for $1.8 billion and that was then the biggest residential sale in the history of New York City</p>
+                        <small><strong>1996</strong></small>
+                        <p>Acquired the Bank of Manhattan Trust Building, which was a vacant seventy-one story skyscraper on Wall Street. After an extensive renovation, the high-rise was renamed the Trump Building</p>
+                        <small><strong>1994</strong></small>
+                        <p>Refurbished the Gulf and Western Building on Columbus Circle, turned it into a 44-story luxury property known as Trump International Hotel and Tower</p>
+                        <small><strong>1989 ― 1992</strong></small>
+                        <p>Ran a second hand airline called Trump Shuttle. What a waste of money, I had to sell it, now it is American Airlines Shuttle, btw</p>
+                        <small><strong>1989, 1990</strong></small>
+                        <p>Learned about Tour de France and decided to hold my very own Tour de Trump. Is America not great enough for that cycling competition?</p>
+                        <small><strong>1988</strong></small>
+                        <p>Acquired the Plaza Hotel in Manhattan for $407 million, invested $50 million to restore the building and boosted it from three-star to four-star hotel (I called it "the Mona Lisa" and sold it for a lot of cash in 1995)</p>
+                        <small><strong>1987</strong></small>
+                        <p>Registered as a Republican</p>
+                        <small><strong>1985</strong></small>
+                        <p>I bought the Mar-a-Lago estate in Palm Beach and turned it into a private club.You can join if you pay $200K initiation fee (and there is another annual fee for members, it is very expensive to be rich). That year I also opened a casino called Trump Castle. My wife Ivana became a manager, because she is another Trump!</p>
+                        <small><strong>1983</strong></small>
+                        <p>I purchased New Jersey Generals, an American football team. I changed team's play schedule and filed an antitrust lawsuit against United States Football League, so NJG are not doing so good now, but back then they were great!</p>
+                        <small><strong>1980</strong></small>
+                        <p>Started developing the Trump Tower skyscraper in Manhattan, I payed a crew of undocumented Polish workers to demolish the historic Bonwit Teller store, including art deco features. All this to make architectural critic Paul Goldberger say in 1983 that the tower's atrium is "the most pleasant interior public space to be completed in New York in some years". At the same time I also started a repair job on the Wollman Rink in Central Park and completed the work in three months for $1.95 million, which was $775,000 less than the initial budget!</p>
+  										</div>
+  								  </li>
+  							  </ul>
+                  <!-- Way back then -->
+                  <ul>
+  								  <li class="details">
+                      <input type="checkbox" id="other">
+  										<label for="other" class="summary"><strong>Way back then</strong></label>
+  										<div>
+                          <small><strong>1978</strong></small>
+                          <p>Purchased a 50 percent stake in the derelict Commodore Hotel and turned it into the Grand Hyatt Hotel in 2 years of remodeling</p>
+                          <small><strong>1971</strong></small>
+                          <p>Was promoted to president of the company and renamed it The Trump Organization</p>
+                          <small><strong>1968</strong></small>
+                          <p>Began my career at my father's real estate development company, Elizabeth Trump & Son</p>
+  										</div>
+  								  </li>
+  							  </ul>
+                <br>
+                <h3>PERSONAL LIFE</h3>
+                  <li class="highlighted">
+                    <ul>
+                      <li>
+                      <strong><small>2006</small></strong>
+                      &mdash;
+                      <a href="https://en.wikipedia.org/wiki/Melania_Trump" target="_blank">Melania</a> gained United States citizenship and gave birth to our son, <a href="https://g.co/kgs/86V5oT">Barron</a>
+                      </li>
+                      <li>
+                      <strong><small>2005</small></strong>
+                      &mdash;
+                      Married her
+                      </li>
+                      <li>
+                      <strong><small>1998</small></strong>
+                      &mdash;
+                      Met my future third wife, Melania Knauss
+                      </li>
+                      <li>
+                      <strong><small>1999</small></strong>
+                      &mdash;
+                      Divorced Marla ¯_(ツ)_/¯
+                      </li>
+                      <li>
+                      <strong><small>1993</small></strong>
+                      &mdash;
+                      Married Marla and had a daughter, we named her Tiffany, because I like <a href="https://www.tiffany.com/" target="_blank">Tiffany & Company</a> jewellery as well
+                      </li>
+                      <li>
+                      <strong><small>1992</small></strong>
+                      &mdash;
+                      Started affair with Marla Maples, so I had to divorce. God knows I love nice women, I love them all!
+                      </li>
+                      <li>
+                      <strong><small>1984</small></strong>
+                      &mdash;
+                      Birth of <a href="https://en.wikipedia.org/wiki/Eric_Trump" target="_blank">Eric Trump</a>
+                      </li>
+                      <li>
+                      <strong><small>1982</small></strong>
+                      &mdash;
+                      Birth of <a href="https://en.wikipedia.org/wiki/Ivanka_Trump" target="_blank">Ivanka Trump</a>
+                      </li>
+                      <li>
+                      <strong><small>1977</small></strong>
+                      &mdash;
+                      My first son is born. I called him <a href="https://en.wikipedia.org/wiki/Donald_Trump_Jr" target="_blank">Donald</a>, of course!
+                      </li>
+                      <li>
+                      <strong><small>1977</small></strong>
+                      &mdash;
+                      Married Czech model Ivana Zelníčková
+                      </li>
+                  </ul>
+                </li>
+                <br>
+                <h3>MEDIA CAREER</h3>
+                    <!-- 21th -->
+                      <ul>
+                        <li class="details">
+                          <input type="checkbox" id="project-4-dependencies">
+                          <label for="project-4-dependencies" class="summary"><strong>21<sup>th</sup> century</strong></label>
+                          <div>
+                            <small><strong>2019</strong></small>
+                            <p>Was awarded Worst Actor and Worst Screen Combo at Golden Raspberry Awards for parts in "Death of a Nation" and "Fahrenheit 11/9"</p>
+                            <small><strong>2015</strong></small>
+                            <p>Published a book "Crippled America: How to Make America Great Again"</p>
+                            <small><strong>2011</strong></small>
+                              <ul>
+                                <li></li>
+                                <li><p>Published a book "Time to Get Tough: Making America #1 Again" in coauthorship with Wynton Hall, Peter Schweizer and Meredith McIver</p></li>
+                                <li><p>Published a book "Midas Touch: Why Some Entrepreneurs Get Rich – And Why Most Don't" in coauthorship with Robert Kiyosaki</p></li>
+                                <li><p>Published a book "Trump Tower" in coauthorship with Jeffrey Robinson</p></li>
+                              </ul>
+                              <br>
+                            <small><strong>2009</strong></small>
+                            <p>Published a book "Think Like a Champion: An Informal Education in Business and Life" in coauthorship with Meredith McIver</p>
+                            <small><strong>2008</strong></small>
+                            <p>Published a book "Never Give Up: How I Turned My Biggest Challenges into Success" in coauthorship with Meredith McIver</p>
+                            <small><strong>2007</strong></small>
+                              <ul>
+                                <li></li>
+                                <li><p>Published a book "Think Big and Kick Ass" in coauthorship with Bill Zanker</p></li>
+                                <li><p>Received a star on the Hollywood Walk of Fame for being producer of Miss Universe pageant</p></li>
+                              </ul>
+                              <br>
+                            <small><strong>2006</strong></small>
+                              <ul>
+                                <li></li>
+                                <li><p>Published a book "Why We Want You to Be Rich" in coauthorship with Meredith McIver and Robert Kiyosaki</p></li>
+                                <li><p>Published a book "How to Build a Fortune: Your Plan for Success From the World's Most Famous Businessman"</p></li>
+                                <li><p>Published a book "The Best Real Estate Advice I Ever Received: 100 Top Experts Share Their Strategies"</p></li>
+                                <li><p>Published a book "Trump 101: The Way to Success" in coauthorship with Meredith McIver</p></li>
+                              </ul>
+                              <br>
+                            <small><strong>2005</strong></small>
+                              <ul>
+                                <li></li>
+                                <li><p>Published a book "The Best Golf Advice I Ever Received"</p></li>
+                                <li><p>Performed a song with Megan Mullally at the 57th Primetime Emmy Awards</p></li>
+                              </ul>
+                              <br>
+                            <small><strong>2004 ― 2008</strong></small>
+                            <p>Ran short-form talk radio program "Trumped!" (one to two minutes on weekdays)</p>
+                            <small><strong>2004</strong></small>
+                              <ul>
+                                <li></li>
+                                <li><p>Published a book "Trump: How to Get Rich" in coauthorship with Meredith McIver</p></li>
+                                <li><p>Published a book "The Way to the Top: The Best Business Advice I Ever Received"</p></li>
+                                <li><p>Published a book "Think Like a Billionaire: Everything You Need to Know About Success, Real Estate, and Life" in coauthorship with Meredith McIver</p></li>
+                              </ul>
+                              <br>
+                            <small><strong>2003 ― 2015</strong></small>
+                            <p>Produced NBC reality shows "The Apprentice" and "The Celebrity Apprentice"</p>
+                            <small><strong>2000</strong></small>
+                            <p>Published a book "Trump: The America We Deserve" in coauthorship with Dave Shiflett</p>
+                          </div>
+                        </li>
+                      </ul>
+                    <!-- 20th -->
+                      <ul>
+                        <li class="details">
+                          <input type="checkbox" id="project-4-dependencies" checked>
+                          <label for="project-4-dependencies" class="summary"><strong>20<sup>th</sup> century</strong></label>
+                          <div>
+                            <small><strong>1997</strong></small>
+                            <p>Published a book "Trump: The Art of the Comeback" in coauthorship with <a href="https://en.wikipedia.org/wiki/Kate_Bohner" target="_blank">Kate Bohner</a></p>
+                            <small><strong>1991</strong></small>
+                            <p>Was awarded Worst Supporting Actor at Golden Raspberry Awards for a part in "Ghosts Can't Do It"</p>
+                            <small><strong>1990</strong></small>
+                            <p>Published a book "Trump: Surviving at the Top" in coauthorship with <a href="https://twitter.com/charlesleerhsen" target="_blank">Charles Leerhsen</a></p>
+                            <small><strong>1987</strong></small>
+                            <p>Published a book "Trump: The Art of the Deal" in coauthorship with <a href="https://en.wikipedia.org/wiki/Tony_Schwartz_(author)" target="_blank">Tony Shwartz</a></p>
+                          </div>
+                        </li>
+                      </ul>
+                    <br>
+              </div>
+              <div class="six wide column">
+                <!-- Languages -->
+                <section>
+                  <h3>Languages</h3>
+                  <p class="tags small">
+                    <a href="/ru-ru" hreflang="ru" rel="alternate" class="language" lang="ru">&#x1f1f7;&#x1f1fa; <span>РУССКИЙ</span></a>
+                    <a href="#" hreflang="ru" rel="alternate" class="language" lang="en">&#x1f1fa;&#x1f1f8; <span>ENGLISH</span></a>
+                </section>
+                <!-- Skills -->
+                <section>
+                  <h3>Skills</h3>
+                  <p class="tags small bulleted">
+                    <span class="tag">NEGOTIATING</span>
+                    <span class="tag">COUNTING</span>
+                    <span class="tag">REMODELING</span>
+                    <span class="tag">WRITING</span>
+                    <span class="tag">ACING</span>
+                    <span class="tag">SINGING</span>
+                    <span class="tag">REPORTING</span>
+                    <span class="tag">INCORPORATING</span>
+                    <span class="tag">SELLING</span>
+                    <span class="tag">ADVERTISING</span>
+                    <span class="tag">HOSTING</span>
+                    <span class="tag">COMPETING</span>
+                    <span class="tag"><strong>TWITTING</strong></span>
+                    <span class="tag">PARENTING</span>
+                    <span class="tag">GAMBLING</span>
+                    <span class="tag">DATING</span>
+                    <span class="tag">SUING</span>
+                    <span class="tag">ORGANIZING</span>
+                    <span class="tag">FUNDING</span>
+                    <span class="tag">DEBATING</span>
+                    <span class="tag">ADVISING</span>
+                    <span class="tag">PRESBYTERIANING</span>
+                  </p>
+                </section>
+                <!-- Character -->
+                <section>
+                  <h3>Character</h3>
+                  <p class="tags small">ADJUSTED CALM AMBITIOUS COMPETITIVE SOCIABLE DIRECT HOSTILE CARELESS IGNORANT INQUISITIVE BOLD CONFIDENT MISCHIEVOUS CHARMING INTERESTING DARING COLORFUL LAZY SELF-PROMOTING</p>
+                </section>
+                <!-- Likes -->
+                <section>
+                  <h3>Likes&#x1f603;</h3>
+                  <p class="tags small"><a href="https://www.youtube.com/watch?v=u_aLESDql1U&ab_channel=VICENews" target="_blank">BILLIONS</a> FILET-O-FISH BIG MAC <a href="https://www.youtube.com/watch?v=RDrfE9I8_hs" target="_blank">CHINA</a> QUARTER POUNDER DIET COKE TARIFFS BIBLE ARTOF DEAL PATRIOTS BEAUTIFUL MODELS GOLD REAL ESTATE WAR PROTESTERS CONSTRUCTION RUSSIANS BANKS SPORTS WOMEN MEXICO RED HAT KOREANS GOLF EVERYBODY <a href="https://www.youtube.com/watch?v=0f9ysmciWUk&ab_channel=VICENews" target="_blank">[1]</a> <a href="https://www.youtube.com/watch?v=TTdmKaXAfAs&ab_channel=WashingtonPost" target="_blank">[2]</a></p>
+                </section>
+                <!-- Dislikes -->
+                <section>
+                  <h3>Dislikes&#x1f61e;</h3>
+                  <p class="tags small">DOGS MEDIA <a href="https://edition.cnn.com/" target="_blank">CNN</a> GERMANS MEXICANS IMMIGRANTS SHITHOLE COUNTRIES UNATTRACTIVE WOMEN BLACKS SUSHI HOT-DOGS ALCOHOL FRUIT CHRISTMAS PARTIES LIBERALS</p>
+                </section>
+                <!-- Wants -->
+                <section>
+                  <h3>Wants&#x1f97a;</h3>
+                  <p class="tags small bulleted">BE HEALTHY GROW A TREE BUILD TRUMP AIRPORT HAVE A TASTE DO A HARLEM SHAKE IN CONGRESS TO GOLF MORE OFTEN WIN ALL THE COURT SUITS</p>
+                </section>
+                <!-- Education -->
+                <section>
+                  <h3>Education</h3>
+                  <ul class="timeline">
+                    <li>
+                      <div><em>2011</em></div>
+                      <div>Asked friends who are prominent and wealthy alumni of the New York Military Academy to secure my academic records so they could not be seen by anyone, never!</div>
+                    </li>
+                    <li class="highlighted">
+                      <div><em>1966</em></div>
+                      <ul>
+                        <li class="details">
+                          <input type="checkbox" id="project-4-dependencies" checked>
+                          <label for="project-4-dependencies" class="summary"><a href="https://www.wharton.upenn.edu/" target="_blank">Wharton School</a></label>
+                          <div>Transferred to the Wharton School of the University of Pennsylvania and graduated in May 1968 with a B.S. in economics</div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><em>1964</em></div>
+                      <ul>
+                        <li class="details">
+                          <input type="checkbox" id="project-4-dependencies" checked>
+                          <label for="project-4-dependencies" class="summary"><a href="https://www.fordham.edu/" target="_blank">Fordham University</a></label>
+                          <div>Started studying in Fordham University</div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="highlighted">
+                      <div><em>1959</em></div>
+                      <ul>
+                        <li class="details">
+                          <input type="checkbox" id="project-4-dependencies" checked>
+                          <label for="project-4-dependencies" class="summary"><a href="https://www.nyma.org/" target="_blank">New York Military Academy</a></label>
+                          <div>Enrolled in the New York Military Academy, a private boarding school, after my parents discovered I made frequent trips into Manhattan without their permission</div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script type="text/javascript">
+      let avatar = document.getElementById('avatar')
+      avatar.onmouseover = function () {
+        document.getElementById('biden').classList.add("biden-block")
+      }
+      avatar.onmouseleave = function () {
+        document.getElementById('biden').classList.remove("biden-block")
+      }
+      </script>
   </body>
 </html>
